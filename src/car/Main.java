@@ -26,7 +26,17 @@ public class Main {
         System.out.println(car);
 
 
-
-
+/*Car{date=Wed Nov 07 00:00:00 CET 3917, engine='null', speedCar=0, timeSpeedTo100km=0.0, carPasazyr=0,
+carPasazyrNow=0, speedNow=0, wheels=[CarWheel{statusWheel=1.0}, CarWheel{statusWheel=1.0},
+ CarWheel{statusWheel=1.0}, CarWheel{statusWheel=1.0}], doors=[CarDoor{statusDor=false,
+ statusWindow=false}, CarDoor{statusDor=false, statusWindow=false}, CarDoor{statusDor=false,
+  statusWindow=false}, CarDoor{statusDor=false, statusWindow=false}]}*/
+/*
+*
+* 1) Час створення задається в конструкторі Car
+* 2) Змінити значення перемінних за допомогою методів на 3 різні способи
+* 3) Не може бути пустих перемінних
+* 4) Створити клас пасажирів (Імя, Вік, права (якщо є катерогія B або C або B,C))
+* */
     }
 }
