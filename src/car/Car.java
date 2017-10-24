@@ -1,5 +1,6 @@
 package car;
 
+import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -16,10 +17,10 @@ public class Car {
     private CarWheel[] wheels;
     private CarDoor[] doors;
 
-    public Car(Date date) {
+    public Car() {
         this.date = date;
-        wheels = new CarWheel[4];
-        doors = new CarDoor[4];
+        wheels = new CarWheel[4];// + запаска
+        doors = new CarDoor[4]; // + багажнік
     }
 
     public Car(Date date, String engine, int speedCar, float timeSpeedTo100km, byte carPasazyr, byte carPasazyrNow, int speedNow) {
@@ -52,7 +53,29 @@ public class Car {
             return carPasazyrNow -= carPasazyrNow;
         }
 
-       /* int GetNumberCarWheel(CarWheel[] carWheels){
+    public CarWheel[] getWheels() {
+        return wheels;
+    }
+
+    public CarDoor[] getDoors() {
+        return doors;
+    }
+        /* int GetNumberCarWheel(CarWheel[] carWheels){
             return carWheels;
         }*/
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "date=" + date +
+                ", engine='" + engine + '\'' +
+                ", speedCar=" + speedCar +
+                ", timeSpeedTo100km=" + timeSpeedTo100km +
+                ", carPasazyr=" + carPasazyr +
+                ", carPasazyrNow=" + carPasazyrNow +
+                ", speedNow=" + speedNow +
+                ", wheels=" + Arrays.toString(wheels) +
+                ", doors=" + Arrays.toString(doors) +
+                '}';
+    }
 }

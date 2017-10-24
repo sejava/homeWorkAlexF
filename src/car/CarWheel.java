@@ -26,5 +26,10 @@ public class CarWheel {
         return statusWheel;
     }
 
-
+    @Override
+    public String toString() {
+        return "CarWheel{" +
+                "statusWheel=" + statusWheel +
+                '}';
+    }
 }

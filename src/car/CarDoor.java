@@ -45,4 +45,13 @@ public class CarDoor {
         return statusWindow;
     }
 
+    @Override
+    public String toString() {
+        return "CarDoor{" +
+                "statusDor=" + statusDor +
+                ", statusWindow=" + statusWindow +
+                '}';
+    }
+
+
 }
