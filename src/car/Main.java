@@ -24,11 +24,9 @@ public class Main {
         System.out.println(car);
         car.UpdateSpeedNow();
         System.out.println(car);
-        //CarDoor carDoor = new CarDoor();
-        //System.out.println(carDoor);
-        System.out.println(car.getWheels());
-        for (CarWheel carWheel : car.getWheels()) {
-            System.out.println(carWheel);
-        }
+
+
+
+
     }
 }

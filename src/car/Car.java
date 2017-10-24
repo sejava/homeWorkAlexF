@@ -19,10 +19,23 @@ public class Car {
 
     public Car() {
         this.date = date;
-        wheels = new CarWheel[4];// + запаска
+        wheels = new CarWheel[4];// + запаска // создали масів з типом даних кальоса кількість 5 шт. їсти по 1
         doors = new CarDoor[4]; // + багажнік
+        carWheel(wheels);
+        carDors(doors);
     }
-
+    public static CarWheel[] carWheel(CarWheel[] wheels){
+        for (int i = 0; i < wheels.length; i++) {
+            wheels[i] = new CarWheel();
+        }
+        return wheels;
+    }
+    public static CarDoor[] carDors(CarDoor[] dors){
+        for (int i = 0; i < dors.length; i++) {
+            dors[i] = new CarDoor();
+        }
+        return dors;
+    }
     public Car(Date date, String engine, int speedCar, float timeSpeedTo100km, byte carPasazyr, byte carPasazyrNow, int speedNow) {
         this.date = date;
         this.engine = engine;
